@@ -19,25 +19,36 @@ body {
   height: 70px;
 }
 
-.navigation-bar {
+.c-navigation-bar {
   height: 70px;
   width: 100%;
   text-align: center;
 }
 
-.navigation-bar img {
+@media screen and (max-width: 1030px) {
+  .c-navigation-bar {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .c-navigation-bar {
+    margin-left: 10rem;
+  }
+}
+
+.c-navigation-bar img {
   float: left;
 }
 
-.navigation-bar ul {
+.c-navigation-bar ul {
   padding: 0px;
-  margin: 0px;
   text-align: center;
   display: inline-block;
   vertical-align: top;
 }
 
-.navigation-bar li {
+.c-navigation-bar li {
   list-style-type: none;
   padding: 0px;
   height: 24px;
@@ -46,12 +57,18 @@ body {
   display: inline;
 }
 
-.navigation-bar li :hover {
+@media screen and (max-width: 780px) {
+  .c-navigation-bar li {
+    display: block;
+  }
+}
+
+.c-navigation-bar li :hover {
   color: #FFE500;
   text-decoration: underline;
 }
 
-.navigation-bar li a {
+.c-navigation-bar li a {
   color: black;
   font-size: 16px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -119,5 +136,122 @@ body {
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+}
+
+.c-banner {
+  margin-top: 10rem;
+  text-align: center;
+  height: 80%;
+}
+
+.c-banner img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 70%;
+  height: 50rem;
+}
+
+.c-banner__btn a {
+  position: relative;
+  padding: 20px 50px;
+  text-decoration: none;
+  color: #fff;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.c-banner__btn a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.c-banner__btn a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(255, 255, 255, 0.4)), to(transparent));
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.c-banner__btn a:hover:after {
+  left: 100%;
+}
+
+.c-banner__btn a span {
+  position: absolute;
+  display: block;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.c-banner__btn a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #fff;
+}
+
+.c-banner__btn a:hover span:nth-child(1) {
+  width: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.c-banner__btn a span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background: #fff;
+}
+
+.c-banner__btn a:hover span:nth-child(3) {
+  width: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.c-banner__btn a span:nth-child(2) {
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 0;
+  background: #fff;
+}
+
+.c-banner__btn a:hover span:nth-child(2) {
+  height: 100%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.c-banner__btn a span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  height: 0;
+  background: #fff;
+}
+
+.c-banner__btn a:hover span:nth-child(4) {
+  height: 100%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 /*# sourceMappingURL=screen.css.map */
