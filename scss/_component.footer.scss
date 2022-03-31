@@ -1,7 +1,7 @@
 .c-footerrow{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background-color: #1F1D1E;
+    //background-color: #1F1D1E;
    
     &--col{
         display: flex;
@@ -38,7 +38,8 @@
 
 .c-footer{
     background-color: #1F1D1E;
-    & hr{
+    &__hr{
+        display: block;
         margin-bottom: 5rem;
         color: #FFE500;
     }

@@ -260,7 +260,6 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  background-color: #1F1D1E;
 }
 
 .c-footerrow--col {
@@ -304,7 +303,8 @@ body {
   background-color: #1F1D1E;
 }
 
-.c-footer hr {
+.c-footer__hr {
+  display: block;
   margin-bottom: 5rem;
   color: #FFE500;
 }
