@@ -260,6 +260,7 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+  background-color: #1F1D1E;
 }
 
 .c-footerrow--col {
@@ -274,6 +275,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  color: white;
 }
 
 .c-footerrow--col ul {
@@ -299,13 +301,76 @@ body {
   color: white;
 }
 
-.c-footer {
+.c-footerrow2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   background-color: #1F1D1E;
 }
 
-.c-footer__hr {
-  display: block;
-  margin-bottom: 5rem;
+.c-footerrow2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.c-footerrow2--col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  margin-left: 3.5rem;
+}
+
+.c-footerrow2--col__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.c-footerrow2--col__social svg {
+  width: 70%;
+}
+
+.c-footerrow2--col ul {
+  margin-top: 2rem;
+}
+
+.c-footerrow2--col ul li {
+  line-height: 2rem;
+  list-style-type: none;
+}
+
+.c-footerrow2--col ul li svg {
+  float: left;
+  width: 20%;
+}
+
+.c-footerrow2--col ul li :hover {
   color: #FFE500;
+}
+
+.c-footer {
+  margin-top: 10rem;
+  background-color: #1F1D1E;
+  height: 13vw;
+}
+
+.c-footer hr {
+  margin-left: 12rem;
+  width: 82%;
+  border: 0.5px solid #FFE500;
 }
 /*# sourceMappingURL=screen.css.map */
