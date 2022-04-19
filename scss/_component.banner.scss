@@ -5,28 +5,49 @@
     
     height: 80%;
     & img{
+        position: absolute;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 15%;
+
         object-fit: cover;
         width: 70%;
-        height: 50rem;
-        //position: absolute;
+        height: 35rem;
+        z-index: -1;
     }
 
- &__text{
-    
+ &__content{
+   position: absolute;
+   margin-left: 35rem;
+   margin-top: 15rem;
+   background-color: rgba(255,255,255,.8);
+   padding-left: 2rem;
+   padding-right: 2rem;
+   padding-bottom: 1rem;
+   @media screen and (max-width: 1530px) {
+    margin-left: 20rem;
+ }
+ @media screen and (max-width: 1130px) {
+  margin-left: 15rem;
+}
+@media screen and (max-width: 970px) {
+  margin-left: 0rem;
+}
  }   
  &__btn{
- //background-color: black;
+ background-color: #FFE500;
+ border: none;
+ width: 12rem;
+ height: 3rem;
+ font-size: 1rem;
  & a{
     position: relative;
     padding: 20px 50px;
     text-decoration: none;
     color: #fff;
     overflow: hidden;
-    background: rgba(255,255,255,.1);
-    //box-shadow: 0 5px 5px rgba(0,0,0.2);
+    &:hover{
+      color: black;
+    }
   }
   & a:before{
     content: '';

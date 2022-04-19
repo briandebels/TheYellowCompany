@@ -140,13 +140,50 @@ body {
 }
 
 .c-banner img {
+  position: absolute;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 15%;
   -o-object-fit: cover;
      object-fit: cover;
   width: 70%;
-  height: 50rem;
+  height: 35rem;
+  z-index: -1;
+}
+
+.c-banner__content {
+  position: absolute;
+  margin-left: 35rem;
+  margin-top: 15rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 1530px) {
+  .c-banner__content {
+    margin-left: 20rem;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .c-banner__content {
+    margin-left: 15rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .c-banner__content {
+    margin-left: 0rem;
+  }
+}
+
+.c-banner__btn {
+  background-color: #FFE500;
+  border: none;
+  width: 12rem;
+  height: 3rem;
+  font-size: 1rem;
 }
 
 .c-banner__btn a {
@@ -155,7 +192,10 @@ body {
   text-decoration: none;
   color: #fff;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.1);
+}
+
+.c-banner__btn a:hover {
+  color: black;
 }
 
 .c-banner__btn a:before {
