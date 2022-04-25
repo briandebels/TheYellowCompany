@@ -1,0 +1,61 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 15px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+    border-radius: 15px;
+    height:10rem;
+  }
+
+
+  .c-productoverview{
+
+
+    &__row{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: 15rem;
+        margin-right:  5rem;
+        padding-bottom: 5rem;
+        grid-gap: 30px;
+    &--col{
+    text-align: center;
+    width: 20rem;
+    
+
+    & img{
+        width: 15rem;
+        height: 20rem;
+        object-fit: cover;
+        object-position: 50% 30%;
+    }
+
+
+    }
+    }
+  }
+
+  .btn {
+    position: absolute;
+   
+    margin-top: 10rem;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }

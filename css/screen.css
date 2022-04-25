@@ -425,7 +425,7 @@ body {
 }
 
 .c-homecategory {
-  padding-bottom: 10rem;
+  padding-bottom: 2rem;
   margin-top: 55rem;
   margin-left: 8rem;
 }
@@ -437,14 +437,22 @@ body {
       grid-template-columns: repeat(3, 1fr);
 }
 
+@media screen and (max-width: 996px) {
+  .c-homecategory__row {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .c-homecategory__row--col {
   text-align: center;
   width: 80%;
+  height: 80%;
 }
 
 .c-homecategory__row--col img {
   width: 100%;
-  height: 60%;
+  height: 80%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 50% 10%;
@@ -454,7 +462,7 @@ body {
 .c-btn {
   position: absolute;
   margin-top: 18rem;
-  margin-left: 9rem;
+  margin-left: 8%;
   background-color: #FFE500;
   border: none;
   width: 12rem;
@@ -564,5 +572,67 @@ body {
   height: 100%;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  border-radius: 15px;
+  height: 10rem;
+}
+
+.c-productoverview__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin-left: 15rem;
+  margin-right: 5rem;
+  padding-bottom: 5rem;
+  grid-gap: 30px;
+}
+
+.c-productoverview__row--col {
+  text-align: center;
+  width: 20rem;
+}
+
+.c-productoverview__row--col img {
+  width: 15rem;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 30%;
+     object-position: 50% 30%;
+}
+
+.btn {
+  position: absolute;
+  margin-top: 10rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=screen.css.map */
