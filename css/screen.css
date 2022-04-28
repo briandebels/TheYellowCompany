@@ -152,6 +152,9 @@ body {
 }
 
 .c-banner__content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   margin-left: 35rem;
   margin-top: 15rem;
@@ -181,6 +184,8 @@ body {
 
 .c-banner__btn {
   background-color: #FFE500;
+  margin-left: auto;
+  margin-right: auto;
   border: none;
   width: 12rem;
   height: 3rem;
@@ -607,6 +612,15 @@ body {
   grid-gap: 30px;
 }
 
+@media screen and (max-width: 1450px) {
+  .c-productoverview__row {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
 .c-productoverview__row--col {
   text-align: center;
   width: 20rem;
@@ -619,11 +633,10 @@ body {
      object-fit: cover;
   -o-object-position: 50% 30%;
      object-position: 50% 30%;
+  z-index: -1;
 }
 
 .btn {
-  position: absolute;
-  margin-top: 10rem;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);

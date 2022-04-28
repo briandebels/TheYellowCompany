@@ -20,7 +20,6 @@
 
   .c-productoverview{
 
-
     &__row{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -28,8 +27,13 @@
         margin-right:  5rem;
         padding-bottom: 5rem;
         grid-gap: 30px;
+        @media screen and (max-width: 1450px) {
+          grid-template-columns: repeat(3, 1fr);
+          margin-left: 5rem;
+          margin-right:  5rem;
+      }
     &--col{
-    text-align: center;
+   text-align: center;
     width: 20rem;
     
 
@@ -38,17 +42,15 @@
         height: 20rem;
         object-fit: cover;
         object-position: 50% 30%;
+        z-index: -1;
     }
-
-
     }
     }
   }
 
   .btn {
-    position: absolute;
-   
-    margin-top: 10rem;
+    //position: absolute;
+    //margin-top: 10rem;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #555;

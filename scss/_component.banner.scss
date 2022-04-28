@@ -16,13 +16,14 @@
     }
 
  &__content{
-   position: absolute;
-   margin-left: 35rem;
-   margin-top: 15rem;
-   background-color: rgba(255,255,255,.8);
-   padding-left: 2rem;
-   padding-right: 2rem;
-   padding-bottom: 1rem;
+  align-items: center;
+  position: absolute;
+  margin-left: 35rem;
+  margin-top: 15rem;
+  background-color: rgba(255,255,255,.8);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
    @media screen and (max-width: 1530px) {
     margin-left: 20rem;
  }
@@ -35,6 +36,8 @@
  }   
  &__btn{
  background-color: #FFE500;
+ margin-left: auto;
+ margin-right: auto;
  border: none;
  width: 12rem;
  height: 3rem;
