@@ -24,9 +24,9 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         margin-left: 15rem;
-        margin-right:  5rem;
+        margin-right:  15rem;
         padding-bottom: 5rem;
-        grid-gap: 30px;
+        grid-gap: 15px;
         @media screen and (max-width: 1450px) {
           grid-template-columns: repeat(3, 1fr);
           margin-left: 5rem;
@@ -35,7 +35,6 @@
     &--col{
    text-align: center;
     width: 20rem;
-    
 
     & img{
         width: 15rem;
@@ -46,18 +45,33 @@
     }
     }
     }
+    & button{
+      background-color: #FFE500;
+    
+    }
   }
+.c-btncontainer{
+padding-bottom: 6rem;
+}
 
   .btn {
-    //position: absolute;
-    //margin-top: 10rem;
+    display: block;
+    margin-left: 10rem;
+    margin-top: -5rem;
+    width: 10rem;
+    height: 3rem;
+    padding-bottom: 1rem;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #555;
     color: white;
     font-size: 16px;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+
+    & svg{
+      width: 65%;
+    }
+
   }

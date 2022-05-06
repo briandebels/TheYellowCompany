@@ -137,6 +137,11 @@ body {
 .c-banner {
   margin-top: 10rem;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   height: 80%;
 }
 
@@ -155,13 +160,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  margin-left: 35rem;
-  margin-top: 15rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-bottom: 1rem;
+}
+
+.c-banner__content--text {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 @media screen and (max-width: 1530px) {
@@ -430,8 +440,7 @@ body {
 }
 
 .c-homecategory {
-  padding-bottom: 2rem;
-  margin-top: 55rem;
+  margin-top: 35rem;
   margin-left: 8rem;
 }
 
@@ -466,13 +475,27 @@ body {
 
 .c-btn {
   position: absolute;
+  display: block;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10rem;
+}
+
+.c-btn button {
   margin-top: 18rem;
-  margin-left: 8%;
+  text-align: center;
   background-color: #FFE500;
   border: none;
   width: 12rem;
   height: 3rem;
   font-size: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .c-btn a {
@@ -607,9 +630,9 @@ body {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   margin-left: 15rem;
-  margin-right: 5rem;
+  margin-right: 15rem;
   padding-bottom: 5rem;
-  grid-gap: 30px;
+  grid-gap: 15px;
 }
 
 @media screen and (max-width: 1450px) {
@@ -636,16 +659,33 @@ body {
   z-index: -1;
 }
 
+.c-productoverview button {
+  background-color: #FFE500;
+}
+
+.c-btncontainer {
+  padding-bottom: 6rem;
+}
+
 .btn {
+  display: block;
+  margin-left: 10rem;
+  margin-top: -5rem;
+  width: 10rem;
+  height: 3rem;
+  padding-bottom: 1rem;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #555;
   color: white;
   font-size: 16px;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.btn svg {
+  width: 65%;
 }
 /*# sourceMappingURL=screen.css.map */
