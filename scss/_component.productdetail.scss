@@ -1,0 +1,15 @@
+.c-detail{
+    margin-top: 5rem;
+    
+    &__row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5rem;
+        
+        &--col{
+            & img{
+                width: 60%;
+            }
+        }
+    }
+}

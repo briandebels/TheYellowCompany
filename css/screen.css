@@ -688,4 +688,20 @@ body {
 .btn svg {
   width: 65%;
 }
+
+.c-detail {
+  margin-top: 5rem;
+}
+
+.c-detail__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding: 5rem;
+}
+
+.c-detail__row--col img {
+  width: 60%;
+}
 /*# sourceMappingURL=screen.css.map */
