@@ -691,6 +691,8 @@ body {
 
 .c-detail {
   margin-top: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .c-detail__row {
@@ -699,9 +701,43 @@ body {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   padding: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .c-detail__row--col img {
-  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.c-detail__row--col--row2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.c-detail__row--col--row2-col img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c-detail__form select {
+  width: 17rem;
+}
+
+.c-detail__form--btn {
+  background-color: #FFE500;
+  border: 0;
+  margin-left: 2rem;
+  width: 10rem;
+  height: 2rem;
+}
+
+.c-relatedproducts {
+  text-align: center;
 }
 /*# sourceMappingURL=screen.css.map */
