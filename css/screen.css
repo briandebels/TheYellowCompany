@@ -691,7 +691,7 @@ body {
 
 .c-detail {
   margin-top: 5rem;
-  margin-left: 5rem;
+  margin-left: 15rem;
   margin-right: 5rem;
 }
 
@@ -739,5 +739,40 @@ body {
 
 .c-relatedproducts {
   text-align: center;
+}
+
+.c-relatedproducts h1 {
+  padding-bottom: 3rem;
+}
+
+.c-contact {
+  margin-top: 10rem;
+}
+
+.c-contact h1, .c-contact p {
+  text-align: center;
+}
+
+.c-contact__row {
+  padding-right: 10rem;
+  padding-left: 35rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.c-contact textarea {
+  width: 25rem;
+}
+
+.c-contact__btn button {
+  background-color: #FFE500;
+  border: none;
+  width: 25rem;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 35rem;
 }
 /*# sourceMappingURL=screen.css.map */

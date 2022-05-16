@@ -1,0 +1,32 @@
+.c-contact{
+    margin-top:  10rem;
+    & h1,p{
+        text-align: center;
+    }
+
+    &__row{
+        padding-right: 10rem;
+        padding-left: 35rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        &-col{
+            //width: 25rem;
+        }
+    }
+    & textarea{
+        width: 25rem;
+    }
+    &__btn{
+
+        & button{
+            background-color: #FFE500;
+            border: none;
+            width: 25rem;
+            height: 2rem;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 35rem;
+        }
+        
+    }
+}

@@ -1,6 +1,7 @@
 .c-detail{
+    
     margin-top: 5rem;
-    margin-left: 5rem;
+    margin-left: 15rem;
     margin-right: 5rem;
 
     &__row{
@@ -48,4 +49,7 @@
 }
 .c-relatedproducts{
     text-align: center;
+    & h1{
+        padding-bottom: 3rem;
+    }
 }
