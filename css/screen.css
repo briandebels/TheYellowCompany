@@ -688,4 +688,104 @@ body {
 .btn svg {
   width: 65%;
 }
+
+.c-detail {
+  margin-top: 5rem;
+  margin-left: 15rem;
+  margin-right: 5rem;
+}
+
+.c-detail__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.c-detail__row--col img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.c-detail__row--col--row2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.c-detail__row--col--row2-col img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c-detail__form select {
+  width: 17rem;
+}
+
+.c-detail__form--btn {
+  background-color: #FFE500;
+  border: 0;
+  margin-left: 2rem;
+  width: 10rem;
+  height: 2rem;
+}
+
+.c-relatedproducts {
+  text-align: center;
+}
+
+.c-relatedproducts h1 {
+  padding-bottom: 3rem;
+}
+
+.c-contact {
+  margin-top: 10rem;
+}
+
+.c-contact h1, .c-contact p {
+  text-align: center;
+}
+
+.c-contact__row {
+  padding-right: 10rem;
+  padding-left: 35rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.c-contact__row-col {
+  width: 25rem;
+}
+
+.c-contact__row-col input {
+  border-color: grey;
+  border-width: 2px;
+  border-radius: 5px;
+  background: #fff;
+  -webkit-box-shadow: 0px 3px 6px rgba(31, 29, 30, 0.16);
+          box-shadow: 0px 3px 6px rgba(31, 29, 30, 0.16);
+}
+
+.c-contact textarea {
+  width: 25rem;
+}
+
+.c-contact__btn button {
+  background-color: #FFE500;
+  border: none;
+  width: 25rem;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 35rem;
+}
 /*# sourceMappingURL=screen.css.map */
