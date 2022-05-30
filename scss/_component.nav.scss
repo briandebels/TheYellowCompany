@@ -74,6 +74,12 @@ float:left;
   padding: 5px 15px;
   opacity: 0.7;
   text-decoration: none;
+  &:hover{
+    color: #FFE500;
+  }
+  &:active{
+    color: #FFE500;
+  }
 }
 
 #menu {
