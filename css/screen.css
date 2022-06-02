@@ -905,4 +905,49 @@ body {
   position: absolute;
   margin-left: -5rem;
 }
+
+.c-winkelmand {
+  padding-top: 5rem;
+  padding-left: 22rem;
+}
+
+.c-winkelmand__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.c-winkelmand__row img {
+  width: 10%;
+  height: 2%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+
+.c-payment {
+  position: absolute;
+  width: 60%;
+  padding-right: 2rem;
+}
+
+.c-payment svg {
+  margin-left: 7rem;
+  margin-top: -5rem;
+}
+
+.c-overview {
+  margin-top: 5rem;
+  margin-right: 25rem;
+  float: right;
+}
+
+.c-overview__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
 /*# sourceMappingURL=screen.css.map */

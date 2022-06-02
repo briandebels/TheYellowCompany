@@ -1,0 +1,24 @@
+.c-winkelmand{
+padding-top: 5rem;
+padding-left: 22rem;
+    &__row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        & img{
+            width: 10%;
+            height: 2%;
+            object-fit: cover;
+            border-radius: 100%
+        }
+    }
+}
+.c-payment{
+    position: absolute;
+    width: 60%;
+    padding-right: 2rem;
+    & svg{
+        margin-left: 7rem;
+        margin-top: -5rem;
+    }
+}
