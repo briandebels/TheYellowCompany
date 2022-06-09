@@ -1,11 +1,48 @@
 .c-overview{
     margin-top: 5rem;
     margin-right: 25rem;
-    float: right;
+    margin-left: 5rem;
 
     &__row{
+        margin-top:5rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         text-align: center;
+        column-gap: 25px;
+        @media screen and (max-width: 1450px) {
+            float: left;
+            margin-left: 5rem;
+            margin-right:  5rem;
+        }
+        &--col{
+            margin-left: 5rem;
+            margin-right:  5rem;
+            width: 80%;
+            height: 80%;
+            text-align: center;
+
+            & img{
+                width: 100%;
+                height: 80%;
+                object-fit: cover;
+                object-position: 50% 10%;
+            }
+
+        }
+    }
+    & button{
+        background-color: #FFE500;
+    }
+}
+
+.c-btncontainer{
+    & svg:hover{
+        color: black;
+    }
+    & button{
+        background-color: #FFE500;
+        &:hover{
+            background-color: grey;
+          }
     }
 }

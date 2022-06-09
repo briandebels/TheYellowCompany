@@ -19,7 +19,18 @@
 
 
   .c-productoverview{
-
+    margin-left: 20rem;
+    &__introtext{
+      margin-left: 75rem;
+      display: flex;
+      flex-direction: row;
+      
+      
+      & form{
+       margin-left: 2rem;
+       margin-top: 1rem;
+      }
+    }
     &__row{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -30,11 +41,22 @@
         @media screen and (max-width: 1450px) {
           grid-template-columns: repeat(3, 1fr);
           margin-left: 5rem;
-          margin-right:  5rem;
+          //margin-right:  5rem;
       }
     &--col{
    text-align: center;
     width: 20rem;
+    & form{
+      padding-left: 7rem;
+      text-align: left;
+    }
+    & input{
+      position: relative;
+      padding-left: 5px;
+  }
+    & label{
+     text-align: left;
+    }
 
     & img{
         width: 15rem;
@@ -47,7 +69,6 @@
     }
     & button{
       background-color: #FFE500;
-    
     }
   }
 .c-btncontainer{
@@ -73,5 +94,7 @@ padding-bottom: 6rem;
     & svg{
       width: 65%;
     }
-
+    &:hover{
+      background-color: grey;
+    }
   }

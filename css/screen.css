@@ -633,6 +633,26 @@ body {
   height: 10rem;
 }
 
+.c-productoverview {
+  margin-left: 20rem;
+}
+
+.c-productoverview__introtext {
+  margin-left: 75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.c-productoverview__introtext form {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
 .c-productoverview__row {
   display: -ms-grid;
   display: grid;
@@ -649,13 +669,26 @@ body {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     margin-left: 5rem;
-    margin-right: 5rem;
   }
 }
 
 .c-productoverview__row--col {
   text-align: center;
   width: 20rem;
+}
+
+.c-productoverview__row--col form {
+  padding-left: 7rem;
+  text-align: left;
+}
+
+.c-productoverview__row--col input {
+  position: relative;
+  padding-left: 5px;
+}
+
+.c-productoverview__row--col label {
+  text-align: left;
 }
 
 .c-productoverview__row--col img {
@@ -696,6 +729,10 @@ body {
 
 .btn svg {
   width: 65%;
+}
+
+.btn:hover {
+  background-color: grey;
 }
 
 .c-detail {
@@ -940,14 +977,58 @@ body {
 .c-overview {
   margin-top: 5rem;
   margin-right: 25rem;
-  float: right;
+  margin-left: 5rem;
 }
 
 .c-overview__row {
+  margin-top: 5rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   text-align: center;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+}
+
+@media screen and (max-width: 1450px) {
+  .c-overview__row {
+    float: left;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+.c-overview__row--col {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+}
+
+.c-overview__row--col img {
+  width: 100%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 10%;
+     object-position: 50% 10%;
+}
+
+.c-overview button {
+  background-color: #FFE500;
+}
+
+.c-btncontainer svg:hover {
+  color: black;
+}
+
+.c-btncontainer button {
+  background-color: #FFE500;
+}
+
+.c-btncontainer button:hover {
+  background-color: grey;
 }
 /*# sourceMappingURL=screen.css.map */
