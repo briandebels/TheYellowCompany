@@ -8,6 +8,10 @@
         padding-left: 8rem;
         margin-top: 5rem;
      }
+     @media screen and (max-width: 850px) {
+        padding-left: 8rem;
+        margin-top: 15rem;
+     } 
     &__row{
         display: grid;
         grid-template-columns: repeat(2, 1fr);

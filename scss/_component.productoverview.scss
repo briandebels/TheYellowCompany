@@ -19,15 +19,18 @@
 
 
   .c-productoverview{
-    margin-left: 20rem;
+    
+    margin-left: 8rem;
+    margin-right: 70rem;
     &__introtext{
-      margin-left: 75rem;
+      margin-left: 95rem;
+      width: 5rem;
       display: flex;
       flex-direction: row;
       
       
       & form{
-       margin-left: 2rem;
+       margin-left: 3rem;
        margin-top: 1rem;
       }
     }
@@ -46,17 +49,7 @@
     &--col{
    text-align: center;
     width: 20rem;
-    & form{
-      padding-left: 7rem;
-      text-align: left;
-    }
-    & input{
-      position: relative;
-      padding-left: 5px;
-  }
-    & label{
-     text-align: left;
-    }
+
 
     & img{
         width: 15rem;
@@ -76,9 +69,9 @@ padding-bottom: 6rem;
 }
 
   .btn {
-    display: block;
+    //display: block;
     margin-left: 10rem;
-    margin-top: -5rem;
+    margin-top: 0rem;
     width: 10rem;
     height: 3rem;
     padding-bottom: 1rem;

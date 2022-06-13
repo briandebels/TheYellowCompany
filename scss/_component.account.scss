@@ -7,21 +7,18 @@
     &__row{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-
         & img{
            width: 85%;
         }
 
-        & svg{
-            position: absolute;
-            padding-right: 35rem;
-            margin-right: 0rem;
-        }
         &-col{
-  
             &-row2{
-                display: grid;
+
                 grid-template-columns: repeat(2, 1fr);
+            }
+            & svg{
+                position: absolute;
+                margin-right: 5rem;
             }
         }
     }
@@ -34,10 +31,13 @@
             height: 2rem;
             cursor: pointer;
             border-radius: 5px;
+            &:hover{
+                background-color: grey;
+            }
         }
         &-2{
             background-color: white;
-            margin-top: 2rem;
+            margin-top: 1rem;
             border: solid;
             border-color: #FFE500;
             width: 10rem;
