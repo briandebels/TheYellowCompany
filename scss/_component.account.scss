@@ -1,0 +1,54 @@
+.c-account{
+    margin-top: 10rem;
+    margin-left: 35rem;
+    @media screen and (max-width: 996px) {
+        margin-left: 0;
+     }
+    &__row{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        & img{
+           width: 85%;
+        }
+
+        &-col{
+  
+            &-row2{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            & svg{
+                position: absolute;
+                margin-right: 5rem;
+            }
+        }
+    }
+    &__btn{
+        
+        &-1{
+            background-color: #FFE500;
+            border: none;
+            width: 10rem;
+            height: 2rem;
+            cursor: pointer;
+            border-radius: 5px;
+                &:hover{
+        background-color: grey;
+      }
+        }
+        &-2{
+            background-color: white;
+            margin-top: 1rem;
+            border: solid;
+            border-color: #FFE500;
+            width: 10rem;
+            height: 2rem;
+            cursor: pointer;
+            border-radius: 5px;
+            &:hover{
+                background-color: #FFE500;
+            }
+        }
+    }
+
+}

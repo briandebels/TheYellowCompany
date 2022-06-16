@@ -44,12 +44,22 @@
             margin-left: 2rem;
             width: 10rem;
             height: 2rem;
+            &:hover{
+                background-color: grey;
+              }
+              cursor: pointer;
         }
     }
 }
 .c-relatedproducts{
+    display: grid;
     text-align: center;
+    margin-left: 18rem;  
     & h1{
-        padding-bottom: 3rem;
+        padding-bottom: 1rem;
+        margin-left: 0;
     }
+}
+.c-overview{
+
 }
